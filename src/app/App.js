@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import initFirebase from '../firebaseRequests/connection.js';
 import Cards from '../components/Cards/cards';
+import FormCard from '../components/Form/form';
 import cardsRequests from '../firebaseRequests/cards';
 class App extends Component {
   state = {
@@ -25,7 +26,7 @@ class App extends Component {
           <Cards mashups={this.state.cards}/>
         </div>
         <div className="col-sm-6">
-          {/* <FormReg /> */}
+          <FormCard />
         </div>
       </div>
     );

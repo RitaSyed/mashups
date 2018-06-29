@@ -7,8 +7,8 @@ class Cards extends React.Component {
     const {mashups} = this.props;
     const cardsComponents = mashups.map(mashup => {
       return (
-        <div className="col-sm-6 col-md-4">
-          <div className="thumbnail" key={mashup.id}>
+        <div className="col-sm-6 col-md-4 cardAnimal" key={mashup.id}>
+          <div className="thumbnail">
             <img src={mashup.imgUrl} alt="..."/>
             <div className="caption">
               <h3>{mashup.name}</h3>
